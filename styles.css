@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --width-small: 25%;
+    --width-medium: 50%;
+    --width-large: 75%;
+    --padding-small: 0.5rem;
+    --padding-medium: 1rem; 
+    --padding-large: 2rem;
+    --padding-xl-large: 5rem;
+    --margin-medium: 1rem;
+    --margin-large: 3rem;
+    --border-radius: 0.3rem;
+    --border-radius-large: 50%;
+  }
+
+  body {
+    background-color: lightgray;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+  }
+   
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+li {
+  list-style: none;
+}
+
+ main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .hero {
+  margin: var(--margin-large) 0 0 0;
+ }
+  
+  /* Japanska flaggan */
+
+  .japan {
+    width: var(--width-large);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    margin-top: var(--margin-large);
+    box-shadow: 1rem 1rem 2rem gray;
+
+    @media screen and (min-width: 768px) {
+      width: var(--width-medium);
+    }
+  }
+
+  .japan-flag {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  /* Flex meny */
+
+  .menu {
+    background-color: white;
+    width: var(--width-large);
+    margin: var(--margin-large) 0;
+    cursor: pointer;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+
+  .flex-item {
+    display: flex;
+    padding: var(--padding-medium) var(--padding-large);
+}
+
+  .flex-item:hover {
+    background-color: gray;
+
+}
+
+  .flex-link {
+    flex: 1;
+    text-decoration: none;
+    color: black;  
+
+  }
+
+  .flex-link:hover {
+    color: white;
+  }
+
+  /* Menu medium */
+
+  .menu-medium {
+    background-color: white;
+    width: var(--width-large);
+    margin: var(--margin-large) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .logo {
+
+    @media screen and (min-width: 600px) {
+      padding: 0 var(--padding-medium);
+      margin: var(--margin-medium) 0;
+      color: black;
+    }
+  }
+
+  /* Menu hard */
+  .menu-hard {
+    background-color: white;
+    width: var(--width-large);
+    margin: var(--margin-large) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+
+.btn-login {
+  border: 1px solid gray;
+  border-radius: var(--border-radius);
+  padding: var(--padding-small);
+  margin: var(--margin-medium) var(--margin-medium) var(--margin-medium) 0;
+}
+
+
+/* Fibonacci - behöver javascript, avvakta... */
+
+.fib {
+  width: var(--width-large);
+  display: flex;
+  flex-direction: row;
+  margin: var(--margin-large) 0;
+  height: 50px;
+}
+
+.fib-area:nth-child(1) {
+  background-color: #000000;
+  width: 1px;
+}
+
+.fib-area:nth-child(2) {
+  background-color: #171212;
+  width: 1px;
+}
+
+.fib-area:nth-child(3) {
+  background-color: #2e2525;
+  width: 2px;
+}
+
+.fib-area:nth-child(4) {
+  background-color: #453737;
+  width: 3px;
+}
+
+.fib-area:nth-child(5) {
+  background-color: #5c494a;
+  width: 5px;
+}
+
+.fib-area:nth-child(6) {
+  background-color: #735c5d;
+  width: 8px;
+}
+
+.fib-area:nth-child(7) {
+  background-color: #896e6f;
+  width: 13px;
+}
+
+.fib-area:nth-child(8) {
+  background-color: #a08082;
+  width: 50px;
+}
+
+.fib-area:nth-child(9) {
+  background-color: #b79294;
+  width: 100px;
+}
+
+.fib-area:nth-child(10) {
+  background-color: #cea5a7;
+  width: 200px;
+}
+
+.card-quote {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  width: var(--width-small);
+  box-shadow: 1rem 1rem 2rem gray;
+}
+
+.quote {
+  padding: var(--padding-xl-large) 0 var(--padding-small) 0;
+}
+
+.quote-avs {
+  padding: 0 0 var(--padding-large) 0;
+}
+
+.pagination-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-medium) 0;
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination span {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--border-radius-large);
+}
+
+.pagination span.active {
+  background-color: red;
+  border-radius: var(--border-radius-large);
+}
+
+.pagination span:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: lightgray;
+  border-radius: var(--border-radius-large);
+}
+
+/* Card with image */
+.profilecard {
+  background-color: white;
+  width: var(--width-small);
+  margin: var(--margin-large) auto;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 1rem 1rem 2rem gray;
+  width: var(--width-small);
+}
+
+.profilecard img {
+  border-radius: 50%;
+  margin: 1rem;
+  align-self: center;
+}
+
+.btn-card {
+  background-color: lightpink;
+  border-radius: var(--border-radius);
+  padding: var(--padding-small);
+  border: none;
+  align-self: center;
+}
+
+
+
+/* Card game */
+.card-game {
+  background-color: white;
+  width: var(--width-small);
+  margin: 3rem auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  box-shadow: 1rem 1rem 2rem gray;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(211, 211, 211, 0.25);
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.heart-one {
+  align-self: flex-start;
+  padding: 0.2rem;
+}
+
+.heart-two {
+  font-size: 40px;
+  padding: 4rem;
+}
+
+.heart-three {
+  align-self: flex-end;
+  padding: 0.2rem;
+}
+
+/* Card sneaker */
+
+.card-sneaker {
+  width: var(--width-small);
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1rem 1rem 2rem gray;
+}
+
+.img-sneaker {
+  background-color: rgb(255, 230, 0);
+  padding: 3rem 1rem;
+}
+
+.art-number {
+  color: white;
+  align-self: flex-end;
+}
+
+.info-sneaker {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.card-sneaker2 {
+  width: var(--width-medium);
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1rem 1rem 2rem gray;
+}
+
+.img-sneaker2 {
+  background-color: rgb(255, 230, 0);
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.price {
+  align-self: flex-end;
+  padding-top: 4rem;
+}
+
+.info-sneaker2 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  padding: 2.5rem;
+}
